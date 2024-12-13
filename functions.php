@@ -17,6 +17,7 @@ if (!function_exists('go_register_nav_menu')) {
 		register_nav_menus(array(
 			'primary_menu' => __('Primary Menu', 'go'),
 			'footer' => __('Footer', 'go'),
+			'footer-two' => __('Footer-two', 'go'),
 		));
 	}
 	add_action('after_setup_theme', 'go_register_nav_menu', 0);
@@ -119,3 +120,10 @@ if (function_exists('acf_add_options_page')) {
 		'parent_slug' => 'themes.php',
 	));
 }
+
+
+<?php if( is_product() ) : ?>
+
+
+
+<?php endif; ?>

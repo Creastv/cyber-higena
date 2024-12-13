@@ -1,20 +1,99 @@
 #header {
-  padding: 10px;
+  position: relative;
+  background-color: var(--light);
+  margin-bottom: 50px;
+  @media #{$sm} {
+    margin-bottom: 30px;
+  }
+  .header-top {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px 30px;
+    @media #{$md} {
+      padding: 20px 0;
+      justify-content: center;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @media #{$sm} {
+        display: none;
+      }
+      li {
+        margin: 0;
+        a {
+          display: block;
+          path {
+            fill: var(--main4);
+          }
+          &:hover {
+            path {
+              fill: var(--main3);
+            }
+          }
+        }
+      }
+    }
+  }
+  .js-header {
+    position: relative;
+    z-index: 2;
+    background-color: var(--white);
+    padding: 10px 30px;
+    border-radius: 10px;
+    @media #{$sm} {
+      padding: 10px;
+    }
+  }
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+  .entry-title {
+    position: relative;
+    z-index: 3;
+    padding: 50px;
+    margin: 0;
+    @media #{$sm} {
+      padding: 30px 0;
+    }
+  }
+  #header-ornament {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0px;
+    transform: translate(0%, -10%);
+    height: 99%;
+    width: auto;
+  }
 }
 
 // logo
 .navbar__brand {
+  img {
+    max-width: 200px;
+    height: auto;
+  }
 }
 // main container nav
 .navbar__navigation {
 }
 // child container nav
 .navbar__navigation__list {
+  @media #{$md} {
+    display: none;
+  }
   ul {
     list-style: none;
     padding: 0;
@@ -22,10 +101,16 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 15px;
     li {
       a {
         text-decoration: none;
+        font-size: 1.125rem;
+        &:hover {
+          span {
+            color: var(--main);
+          }
+        }
       }
     }
   }
@@ -53,7 +138,7 @@
   > span {
     font-size: 12px;
     transform: translateY(1px);
-    color: #fff;
+    color: var(--main);
   }
   .navbar__toggler__btn {
     span {
@@ -61,7 +146,7 @@
       width: 30px;
       height: 3px;
       border-radius: 100px;
-      background-color: #fff;
+      background-color: var(--main4);
       transition: all 0.1s linear;
       margin-bottom: 0px;
       &:nth-child(2) {

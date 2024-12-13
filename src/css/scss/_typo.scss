@@ -1,5 +1,5 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "circe", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 100%;
@@ -25,38 +25,43 @@ h6,
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  color: var(--black);
   transition: all 0.3s;
+  font-family: "madcap", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  color: var(--main4);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 h1,
 .h1 {
   font-size: 2.25em;
-  color: var(--black);
+  color: var(--main4);
 }
 h2,
 .h2 {
   font-size: 1.8em;
-  color: var(--black);
+  color: var(--main4);
 }
 h3,
 .h3 {
   font-size: 1.5em;
-  color: var(--black);
+  color: var(--main4);
 }
 h4,
 .h4 {
   font-size: 1.3em;
-  color: var(--black);
+  color: var(--main4);
 }
 h5,
 .h5 {
   font-size: 1.125em;
-  color: var(--black);
+  color: var(--main4);
 }
 h6,
 .h6 {
   font-size: 1em;
-  color: var(--black);
+  color: var(--main4);
 }
 p {
   padding: 0;
@@ -92,6 +97,7 @@ strong {
   color: var(--black);
 }
 a {
+  transition: all 0.3s ease;
   color: var(--main2);
   font-style: normal;
   &:hover {
