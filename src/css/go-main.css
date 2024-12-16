@@ -777,6 +777,11 @@ body.single .entry-header:before {
   height: 30%;
   background-color: var(--light);
 }
+@media only screen and (max-width: 768px) {
+  body.single .entry-header:before {
+    display: none;
+  }
+}
 body.single .entry-header h1 {
   color: var(--main4) !important;
   font-size: 2.4em;
@@ -875,7 +880,7 @@ input,
 select {
   width: 100%;
   padding: 10px;
-  border-radius: 0px;
+  border-radius: 10px;
   border: 1px solid var(--main4);
   margin: 5px 0;
   background-color: var(--white);
@@ -886,7 +891,7 @@ textarea {
   display: block;
   width: 100%;
   padding: 10px;
-  border-radius: 0px;
+  border-radius: 10px;
   border: 1px solid var(--main4);
   background-color: var(--white);
   color: var(--black);

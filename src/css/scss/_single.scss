@@ -29,6 +29,9 @@ body.single {
       width: 100vw;
       height: 30%;
       background-color: var(--light);
+      @media #{$sm} {
+        display: none;
+      }
     }
     h1 {
       color: var(--main4) !important;
