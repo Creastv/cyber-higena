@@ -20,7 +20,7 @@ togglerNav.addEventListener("click", () => {
 });
 
 // sticy nabvbar
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.querySelector(".js-header");
   const body = document.body;
   let navbarOffsetTop = navbar.offsetTop;
@@ -40,10 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
     navbarOffsetTop = navbar.offsetTop;
     onScroll(); 
   }
-
+  onScroll()
   window.addEventListener("scroll", onScroll);
   window.addEventListener("resize", onResize);
-});
+// });
 
 
   // Go to Top
