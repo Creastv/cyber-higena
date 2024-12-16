@@ -1,0 +1,68 @@
+@import "../../src/css/scss/variable";
+
+.bc-title {
+  position: relative;
+  margin-bottom: 30px;
+  @media #{$sm} {
+  }
+  svg {
+    width: 60px;
+    height: auto;
+  }
+  svg.lewo {
+    position: absolute;
+    top: -10px;
+    left: -80px;
+  }
+  svg.prawo {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+  .bc-title__wrap {
+    .bc-title__title {
+      position: relative;
+      font-family: "madcap", sans-serif;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      font-size: 3.188rem;
+      * {
+        color: var(--main4) !important;
+      }
+
+      .entry-title-first {
+        position: relative;
+        z-index: 2;
+      }
+      .entry-title-second {
+        position: relative;
+        z-index: 2;
+
+        &:after {
+          content: "";
+          position: absolute;
+          z-index: -2;
+
+          display: block;
+          -webkit-clip-path: polygon(1% 90%, 97% 79%, 100% 100%, 0% 100%);
+          clip-path: polygon(1% 90%, 97% 79%, 100% 100%, 0% 100%);
+          background-color: var(--main1);
+          width: 110%;
+          height: 100px;
+          bottom: 5px;
+          left: -5%;
+        }
+      }
+      .entry-title-third {
+        position: relative;
+      }
+    }
+  }
+}
+.bc-title.aligncenter {
+  .bc-title-big {
+    left: 50%;
+    transform: translate(-50%, 0) !important;
+  }
+}

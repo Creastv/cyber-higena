@@ -1,9 +1,27 @@
+.home #header {
+  &:after {
+    height: 100%;
+  }
+}
 #header {
   position: relative;
-  background-color: var(--light);
-  margin-bottom: 50px;
+
+  // margin-bottom: 50px;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: var(--light);
+    z-index: -1;
+  }
   @media #{$sm} {
     margin-bottom: 30px;
+  }
+  .container {
+    position: relative;
   }
   .header-top {
     position: relative;
@@ -48,6 +66,7 @@
     position: relative;
     z-index: 2;
     background-color: var(--white);
+    border: 3px solid var(--light);
     padding: 10px 30px;
     border-radius: 10px;
     @media #{$sm} {

@@ -1,0 +1,96 @@
+:root {
+  --main: #ea4c67;
+  --main1: #c1d341;
+  --main2: #f3921b;
+  --main3: #f7931d;
+  --main4: #009439;
+  --main5: #89aada;
+  --black: #232322;
+  --light-black: #373737;
+  --gray: #b2b9c5;
+  --light: #e4eefb;
+  --white: #fff;
+}
+
+.hight-contrast {
+  --main: #ffeb87;
+  --main: #ffeb87;
+  --main1: #ffeb87;
+  --main2: #ffeb87;
+  --main3: #ffeb87;
+  --main4: #ffeb87;
+  --main5: #ffeb87;
+  --black: #ffeb87;
+  --light-black: #ffeb87;
+  --light: #212529;
+  --white: #212529;
+}
+
+.kontakt-block .kontakt-block__wrap {
+  border: 1px solid #ddd;
+  transition: all 0.5s ease-out;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  align-items: stretch;
+}
+@media only screen and (max-width: 768px) {
+  .kontakt-block .kontakt-block__wrap {
+    flex-wrap: wrap;
+  }
+}
+.kontakt-block .kontakt-block__wrap .col {
+  padding: 30px;
+}
+.kontakt-block .kontakt-block__wrap .col:nth-child(1) {
+  position: relative;
+  background-color: var(--black);
+  display: flex;
+  width: 30%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.kontakt-block .kontakt-block__wrap .col:nth-child(1) * {
+  color: var(--white);
+}
+@media only screen and (max-width: 768px) {
+  .kontakt-block .kontakt-block__wrap .col:nth-child(1) {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+}
+.kontakt-block .kontakt-block__wrap .col:nth-child(2) {
+  flex: auto;
+  background-color: var(--white);
+}
+@media only screen and (max-width: 768px) {
+  .kontakt-block .kontakt-block__wrap .col:nth-child(2) {
+    width: 100%;
+    padding: 15px;
+  }
+}
+.kontakt-block .kontakt-block__wrap .kontakt-block__info {
+  align-self: center;
+}
+.kontakt-block .kontakt-block__wrap .kontakt-block__info .kontakt-block__ornament {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .kontakt-block .kontakt-block__wrap .kontakt-block__info .kontakt-block__ornament {
+    left: initial;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}
+.kontakt-block .kontakt-block__wrap .kontakt-block__form-wraper {
+  padding: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .kontakt-block .kontakt-block__wrap .kontakt-block__form-wraper {
+    padding: 0;
+  }
+}/*# sourceMappingURL=kontakt-block.css.map */

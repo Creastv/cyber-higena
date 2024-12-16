@@ -1,5 +1,5 @@
 <h1 class="entry-title">
-    <?php if (is_category()) :
+	<?php if (is_category()) :
 		single_cat_title();
 	elseif (is_tax()) :
 		single_tag_title();
@@ -42,6 +42,6 @@
 	endif; ?>
 </h1>
 <?php if (is_category()) : ?>
-<?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
-<?php the_archive_description('<div class="taxonomy-description">', '</div>'); ?>
+	<?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
+	<?php the_archive_description('<div class="taxonomy-description">', '</div>'); ?>
 <?php endif; ?>

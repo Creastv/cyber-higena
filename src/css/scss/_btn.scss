@@ -1,45 +1,33 @@
 .btn-main {
   padding: 10px 20px;
-  background-color: var(--main3);
-  border: 2px solid var(--main3) !important;
+  background-color: var(--main);
+  border: 1px solid var(--black) !important;
   color: var(--white) !important;
   border: none;
-  border-radius: 0px;
+  border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   font-weight: 800;
   transition: all 0.3s linear;
-  span {
-    color: var(--white) !important;
-    vertical-align: middle;
-    display: inline-block;
-  }
-  svg {
-    display: flex;
-    vertical-align: middle;
-    path {
-      fill: var(--white);
-    }
-  }
   &:hover {
-    background-color: var(--main2);
-    border-color: var(--main2) !important;
-    color: var(--white) !important;
+    background: none;
+    border-color: var(--main) !important;
+    color: var(--main) !important;
   }
 }
 
 .btn-rev {
   padding: 10px 20px;
-  border: 2px solid var(--main3) !important;
-  color: var(--main3);
+  border: 2px solid var(--main1) !important;
+  color: var(--main1);
   border: none;
-  border-radius: 0px;
+  border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   &:hover {
-    background-color: var(--main3);
+    background-color: var(--main1);
     color: var(--white);
   }
 }

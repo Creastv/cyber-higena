@@ -9,7 +9,7 @@ require get_template_directory() . '/func/wp-cuztomize.php';
 
 add_theme_support('post-thumbnails');
 add_theme_support('custom-logo');
-add_image_size('post-futured', 600, 370, array('center', 'center'), true);
+add_image_size('post-futured', 400, 250, array('center', 'center'), true);
 
 if (!function_exists('go_register_nav_menu')) {
 	function go_register_nav_menu()
@@ -120,10 +120,3 @@ if (function_exists('acf_add_options_page')) {
 		'parent_slug' => 'themes.php',
 	));
 }
-
-
-<?php if( is_product() ) : ?>
-
-
-
-<?php endif; ?>

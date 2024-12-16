@@ -31,7 +31,6 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 100%;
-  line-height: 1.2;
   color: var(--black);
 }
 
@@ -47,68 +46,70 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Lato", sans-serif;
-  font-weight: 800;
-  font-style: normal;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
   transition: all 0.3s;
-  font-family: "madcap", sans-serif;
-  font-weight: 900;
+  font-family: "circe", sans-serif;
+  font-weight: 700 !important;
   font-style: normal;
-  letter-spacing: 0.08em;
-  color: var(--main4);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: var(--black);
 }
 
 h1,
 .h1 {
   font-size: 2.25em;
-  color: var(--main4);
 }
 
 h2,
 .h2 {
   font-size: 1.8em;
-  color: var(--main4);
 }
 
 h3,
 .h3 {
   font-size: 1.5em;
-  color: var(--main4);
 }
 
 h4,
 .h4 {
   font-size: 1.3em;
-  color: var(--main4);
 }
 
 h5,
 .h5 {
   font-size: 1.125em;
-  color: var(--main4);
 }
 
 h6,
 .h6 {
   font-size: 1em;
-  color: var(--main4);
 }
 
-p {
+.entry-title {
+  font-family: "madcap", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.31em;
+  color: var(--main4);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+}
+
+p,
+.p {
+  font-family: "circe", sans-serif;
+  font-weight: 400;
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
-  font-size: 1em;
-  line-height: 1.5;
+  font-size: 1.25em;
+  line-height: 1.2;
   color: var(--light-black);
   transition: all 0.3s;
 }
 @media only screen and (max-width: 768px) {
-  p {
+  p,
+  .p {
     font-size: 0.875em;
   }
 }
@@ -139,7 +140,7 @@ strong {
 
 a {
   transition: all 0.3s ease;
-  color: var(--main2);
+  color: var(--main4);
   font-style: normal;
 }
 a:hover {
@@ -294,10 +295,10 @@ body {
   text-decoration: none;
 }
 .go-pagination a:hover {
-  color: var(--main2);
+  color: var(--main4);
 }
 .go-pagination span.current {
-  background-color: var(--main2);
+  background-color: var(--main4);
   color: var(--white);
   padding: 5px 5px;
   border-radius: 3px;
@@ -444,15 +445,30 @@ body {
   border-top: 1px solid var(--main5);
 }
 
+.home #header:after {
+  height: 100%;
+}
+
 #header {
   position: relative;
+}
+#header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: calc(100% - 50px);
   background-color: var(--light);
-  margin-bottom: 50px;
+  z-index: -1;
 }
 @media only screen and (max-width: 768px) {
   #header {
     margin-bottom: 30px;
   }
+}
+#header .container {
+  position: relative;
 }
 #header .header-top {
   position: relative;
@@ -498,6 +514,7 @@ body {
   position: relative;
   z-index: 2;
   background-color: var(--white);
+  border: 3px solid var(--light);
   padding: 10px 30px;
   border-radius: 10px;
 }
@@ -613,47 +630,35 @@ body {
 
 .btn-main {
   padding: 10px 20px;
-  background-color: var(--main3);
-  border: 2px solid var(--main3) !important;
+  background-color: var(--main);
+  border: 1px solid var(--black) !important;
   color: var(--white) !important;
   border: none;
-  border-radius: 0px;
+  border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   font-weight: 800;
   transition: all 0.3s linear;
 }
-.btn-main span {
-  color: var(--white) !important;
-  vertical-align: middle;
-  display: inline-block;
-}
-.btn-main svg {
-  display: flex;
-  vertical-align: middle;
-}
-.btn-main svg path {
-  fill: var(--white);
-}
 .btn-main:hover {
-  background-color: var(--main2);
-  border-color: var(--main2) !important;
-  color: var(--white) !important;
+  background: none;
+  border-color: var(--main) !important;
+  color: var(--main) !important;
 }
 
 .btn-rev {
   padding: 10px 20px;
-  border: 2px solid var(--main3) !important;
-  color: var(--main3);
+  border: 2px solid var(--main1) !important;
+  color: var(--main1);
   border: none;
-  border-radius: 0px;
+  border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
 }
 .btn-rev:hover {
-  background-color: var(--main3);
+  background-color: var(--main1);
   color: var(--white);
 }
 
