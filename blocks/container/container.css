@@ -31,4 +31,8 @@
   width: 100vw;
   left: -50vw;
   margin-left: 50%;
+}
+.custome-container .container-narrow {
+  padding-left: 15px;
+  padding-right: 15px;
 }/*# sourceMappingURL=container.css.map */
