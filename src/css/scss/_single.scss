@@ -9,6 +9,9 @@
   color: var(--black);
 }
 body.single {
+  #main {
+    z-index: -1;
+  }
   .entry-header {
     width: 100%;
     margin: 0 auto;

@@ -104,6 +104,15 @@
     height: 99%;
     width: auto;
   }
+  .navbar__brand {
+    img {
+      max-width: 200px;
+      height: auto;
+      @media #{$sm} {
+        max-width: 130px;
+      }
+    }
+  }
 }
 
 // logo
@@ -111,9 +120,6 @@
   img {
     max-width: 200px;
     height: auto;
-    @media #{$sm} {
-      max-width: 130px;
-    }
   }
 }
 // main container nav

@@ -1,6 +1,9 @@
 #footer {
   background-color: var(--light);
   padding-top: 50px;
+  @media #{$sm} {
+    padding-top: 0;
+  }
   .f-info {
     margin-top: -2px;
     padding-bottom: 20px;
