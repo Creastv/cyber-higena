@@ -33,6 +33,11 @@
   width: 60px;
   height: auto;
 }
+@media only screen and (max-width: 768px) {
+  .bc-title svg {
+    display: none;
+  }
+}
 .bc-title svg.lewo {
   position: absolute;
   top: -10px;

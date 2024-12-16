@@ -111,6 +111,9 @@
   img {
     max-width: 200px;
     height: auto;
+    @media #{$sm} {
+      max-width: 130px;
+    }
   }
 }
 // main container nav

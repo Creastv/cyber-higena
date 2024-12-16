@@ -43,8 +43,8 @@ body {
 .entry-content {
   .container-narrow {
     @media #{$sm} {
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 }
