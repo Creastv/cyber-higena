@@ -907,6 +907,7 @@ textarea {
 @media only screen and (max-width: 768px) {
   .wpcf7-submit {
     max-width: 100%;
+    display: block;
   }
 }
 
