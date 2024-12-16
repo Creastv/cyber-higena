@@ -41,8 +41,8 @@ togglerNav.addEventListener("click", () => {
     onScroll(); 
   }
   onScroll()
-  window.addEventListener("scroll", onScroll);
-  window.addEventListener("resize", onResize);
+ document.addEventListener("scroll", onScroll);
+ document.addEventListener("resize", onResize);
 // });
 
 
