@@ -25,7 +25,8 @@ $articles = new WP_Query(array(
                 <?php endwhile;
                 wp_reset_query(); ?>
             </div>
+            <div class="swiper-pagination swiper-pagination--posts"></div>
         </div>
-        <div class="swiper-pagination swiper-pagination--posts"></div>
+
     </div>
 </div>

@@ -11,7 +11,7 @@ select {
   width: 100%;
   padding: 10px;
   border-radius: 0px;
-  border: 1px solid var(--main2);
+  border: 1px solid var(--main4);
   margin: 5px 0;
   background-color: var(--white);
   color: var(--black);
@@ -21,17 +21,19 @@ textarea {
   width: 100%;
   padding: 10px;
   border-radius: 0px;
-  border: 1px solid var(--main2);
+  border: 1px solid var(--main4);
   background-color: var(--white);
   color: var(--black);
   margin: 5px 0;
 }
 .wpcf7-submit {
-  background-color: var(--main2);
+  background-color: var(--main);
   color: white;
   padding: 10px;
-  border: none;
-  border-radius: 0px;
+  border-radius: 6px !important;
+  // border-radius: 0px;
+  border: 1px solid var(--black);
+
   cursor: pointer;
   width: 100%;
   max-width: 200px;

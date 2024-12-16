@@ -158,3 +158,34 @@ body {
   align-items: center;
   gap: 20px;
 }
+
+.hero {
+  padding: 0 50px;
+  @media #{$sm} {
+    padding: 0;
+    text-align: center;
+  }
+  .bc-button {
+    @media #{$sm} {
+      justify-content: center;
+    }
+  }
+  .bc-title {
+    margin-bottom: 0;
+  }
+  .bc-title__title {
+    line-height: 1.2;
+  }
+  .entry-title-second {
+    font-size: 4rem;
+    &:after {
+      display: none;
+    }
+    @media #{$lg} {
+      font-size: 3rem;
+    }
+    @media #{$sm} {
+      font-size: 2rem;
+    }
+  }
+}
